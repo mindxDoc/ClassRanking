@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Tiếng Việt",
+        "pwd": "25"
+    },
+    {
+        "name": "Math",
+        "pwd": "30"
+    },
+    {
+        "name": "English",
+        "pwd": "28"
+    },
+    {
+        "name": "Vật lý",
+        "pwd": "36"
+    },
+    {
+        "name": "Hoá học",
+        "pwd": "45"
+    },
+    {
+        "name": "Sinh học",
+        "pwd": "48"
+    },
+    {
+        "name": "Java",
+        "pwd": "12"
+    },
+    {
+        "name": "Python",
+        "pwd": "90"
+    }
+]
