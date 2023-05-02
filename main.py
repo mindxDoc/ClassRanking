@@ -10,12 +10,12 @@ class Dashboard(qtw.QWidget):
         super(Dashboard, self).__init__()
         uic.loadUi("main.ui", self)
         self.loadCurrentRank()
-
+        self.show_new = ShowNew(self)
         self.detail = None
         self.addNew.clicked.connect(self.openAddForm)
     
     def loadCurrentRank(self):
-        self.show_new = ShowNew()
+        self.show_new = ShowNew(self)
         self.removeAllData()
         self.verticalLayout_4.addWidget(self.show_new)
         self.show_new.show()

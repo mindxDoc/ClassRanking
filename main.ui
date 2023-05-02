@@ -397,6 +397,30 @@
                  </property>
                 </widget>
                </item>
+               <item alignment="Qt::AlignHCenter">
+                <widget class="QLabel" name="editBtn">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Action</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignHCenter">
+                <widget class="QLabel" name="deleteBtn">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Action</string>
+                 </property>
+                </widget>
+               </item>
               </layout>
              </widget>
             </item>

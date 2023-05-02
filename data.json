@@ -1,19 +1,7 @@
 [
     {
-        "name": "Tiếng Việt",
-        "pwd": "25"
-    },
-    {
-        "name": "Math",
-        "pwd": "30"
-    },
-    {
-        "name": "English",
-        "pwd": "28"
-    },
-    {
         "name": "Vật lý",
-        "pwd": "36"
+        "pwd": "1"
     },
     {
         "name": "Hoá học",
@@ -30,5 +18,9 @@
     {
         "name": "Python",
         "pwd": "90"
+    },
+    {
+        "name": "Vietnamese",
+        "pwd": "99"
     }
 ]
