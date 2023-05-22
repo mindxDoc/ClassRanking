@@ -14,7 +14,7 @@ class Dashboard(qtw.QWidget):
         self.detail = None
         self.addNew.clicked.connect(self.openAddForm)
     
-    def loadCurrentRank(self):
+    def loadCurrentRank(self): #hàm này sẽ được sử dụng ở nhiều màn hình con nên sẽ cần một param parent ở widget con
         self.show_new = ShowNew(self)
         self.removeAllData()
         self.verticalLayout_4.addWidget(self.show_new)

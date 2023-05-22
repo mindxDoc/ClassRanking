@@ -6,12 +6,12 @@ import json
 
 class EditForm(QDialog):
 
-    def __init__(self, parent, index, dashboard):
+    def __init__(self, parent, index, dashboard): #gọi parent để có quyền access các function của widget trong main.py
         super(EditForm, self).__init__(parent)
         self.index = index
         with open("data.json", "r", encoding="utf-8") as f:
             self.data = json.load(f)
-        uic.loadUi("add_form.ui", self)
+        uic.loadUi("add_form.ui", self) #tận dụng UI và add value từ json vào để thêm quyền edit
         self.name.setText(self.data[self.index]["name"])
         self.pwd.setText(self.data[self.index]["pwd"])
         self.submit.clicked.connect(self.updateData)
@@ -25,5 +25,5 @@ class EditForm(QDialog):
         else:
             with open("data.json", "w", encoding="utf-8") as f:
                 json.dump(self.data, f, indent=4, sort_keys=True, ensure_ascii=False)
-            self.dashboard.loadCurrentRank()
+            self.dashboard.loadCurrentRank() #gọi từ class Dashboard ở main.py
             self.close()

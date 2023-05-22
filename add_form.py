@@ -6,7 +6,7 @@ import json
 
 class AddForm(QDialog):
 
-    def __init__(self, parent=None):
+    def __init__(self, parent=None): #gọi parent để có quyền access các function của widget trong main.py
         super(AddForm, self).__init__(parent)
         with open("data.json", "r", encoding="utf-8") as f:
             self.data = json.load(f)
@@ -23,5 +23,5 @@ class AddForm(QDialog):
             self.data.append(self.new_entity)
             with open("data.json", "w", encoding="utf-8") as f:
                 self.data = json.dump(self.data, f, indent=4, sort_keys=True, ensure_ascii=False)
-            self.parent().loadCurrentRank()
+            self.parent().loadCurrentRank() #gọi từ class Dashboard ở main.py
             self.close()

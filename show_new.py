@@ -16,6 +16,7 @@ class ShowNew(QDialog):
         uic.loadUi("show_new.ui", self)
         self.setupUi()
 
+    # code sẵn UI, sau đó truy cập vào file .ui để xem source code, sau đó copy những đoạn code cần add rồi xoá trong QT Designer đi
     def setupUi(self):
         for i, d in enumerate(self.data):
             name = d["name"]
