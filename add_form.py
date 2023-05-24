@@ -8,9 +8,9 @@ class AddForm(QDialog):
 
     def __init__(self, parent=None):
         super(AddForm, self).__init__(parent)
-        with open("data.json", "r", encoding="utf-8") as f:
+        with open("../ClassRanking/data.json", "r", encoding="utf-8") as f:
             self.data = json.load(f)
-        uic.loadUi("add_form.ui", self)
+        uic.loadUi("../ClassRanking/add_form.ui", self)
         self.submit.clicked.connect(self.addNewData)
 
     def addNewData(self):
@@ -21,7 +21,7 @@ class AddForm(QDialog):
         else:
             self.new_entity = {"name": self.nameInput, "pwd": self.pwdInput}
             self.data.append(self.new_entity)
-            with open("data.json", "w", encoding="utf-8") as f:
+            with open("../ClassRanking/data.json", "w", encoding="utf-8") as f:
                 self.data = json.dump(self.data, f, indent=4, sort_keys=True, ensure_ascii=False)
             self.parent().loadCurrentRank()
             self.close()

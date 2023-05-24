@@ -11,9 +11,9 @@ class ShowNew(QDialog):
     def __init__(self, dashboard, parent=None):
         super(ShowNew, self).__init__(parent)
         self.dashboard = dashboard
-        with open("data.json", "r", encoding="utf-8") as f:
+        with open("../ClassRanking/data.json", "r", encoding="utf-8") as f:
             self.data = json.load(f)
-        uic.loadUi("show_new.ui", self)
+        uic.loadUi("../ClassRanking/show_new.ui", self)
         self.setupUi()
 
     def setupUi(self):
@@ -39,9 +39,9 @@ class ShowNew(QDialog):
             self.valueEdit = QPushButton(self.editCol)
             self.valueEdit.setObjectName(id)  # store the identifier in the objectName property
             iconEdit = QIcon()
-            iconEdit.addFile(u"icons/edit.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+            iconEdit.addFile(u"../ClassRanking/icons/edit.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
             self.valueEdit.setIcon(iconEdit)
-            self.valueEdit.setIconSize(QSize(24, 24))
+            self.valueEdit.setIconSize(QSize(30, 30))
             self.verticalLayout_3.addWidget(self.valueEdit, 0, Qt.AlignmentFlag.AlignHCenter)
             self.horizontalLayout.addWidget(self.editCol)
             self.valueEdit.setText("")
@@ -51,9 +51,9 @@ class ShowNew(QDialog):
             self.valueDelete = QPushButton(self.deleteCol)
             self.valueDelete.setObjectName(id)  # store the identifier in the objectName property
             iconDelete = QIcon()
-            iconDelete.addFile(u"icons/remove.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+            iconDelete.addFile(u"../ClassRanking/icons/remove.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
             self.valueDelete.setIcon(iconDelete)
-            self.valueDelete.setIconSize(QSize(24, 24))
+            self.valueDelete.setIconSize(QSize(30, 30))
             self.verticalLayout_4.addWidget(self.valueDelete, 0, Qt.AlignmentFlag.AlignHCenter)
             self.horizontalLayout.addWidget(self.deleteCol)
             self.valueDelete.setText("")
@@ -72,6 +72,6 @@ class ShowNew(QDialog):
                                     QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
         if reply == QMessageBox.StandardButton.Yes:
             self.data.pop(index)
-            with open("data.json", "w", encoding="utf-8") as f:
+            with open("../ClassRanking/data.json", "w", encoding="utf-8") as f:
                 json.dump(self.data, f, indent=4, sort_keys=True, ensure_ascii=False)
             self.dashboard.loadCurrentRank()

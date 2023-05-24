@@ -8,7 +8,7 @@ from show_new import ShowNew
 class Dashboard(qtw.QWidget):
     def __init__(self):
         super(Dashboard, self).__init__()
-        uic.loadUi("main.ui", self)
+        uic.loadUi("../ClassRanking/main.ui", self)
         self.loadCurrentRank()
         self.show_new = ShowNew(self)
         self.detail = None

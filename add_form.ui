@@ -37,7 +37,7 @@ color: #fff;
 padding: 5%;</string>
    </property>
    <property name="text">
-    <string>Submit</string>
+    <string>Thêm</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -45,7 +45,7 @@ padding: 5%;</string>
     <rect>
      <x>130</x>
      <y>140</y>
-     <width>221</width>
+     <width>241</width>
      <height>31</height>
     </rect>
    </property>
@@ -55,7 +55,7 @@ padding: 5%;</string>
     </font>
    </property>
    <property name="text">
-    <string>Sign in to yout existing account</string>
+    <string>Thêm thông tin học sinh vào BXH</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -73,7 +73,7 @@ padding: 5%;</string>
     </font>
    </property>
    <property name="text">
-    <string>Username</string>
+    <string>Họ và tên</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -91,7 +91,7 @@ padding: 5%;</string>
     </font>
    </property>
    <property name="text">
-    <string>Password</string>
+    <string>Điểm</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="name">
@@ -107,7 +107,7 @@ padding: 5%;</string>
     <string notr="true">border-radius: 5%;</string>
    </property>
    <property name="placeholderText">
-    <string>Nhập tên tài khoản</string>
+    <string>Nhập họ và tên</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="pwd">
@@ -127,25 +127,31 @@ padding: 5%;</string>
     <enum>QLineEdit::Normal</enum>
    </property>
    <property name="placeholderText">
-    <string>Nhập mật khẩu</string>
+    <string>Nhập điểm</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>150</x>
      <y>90</y>
-     <width>71</width>
+     <width>191</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>Segoe UI</family>
      <pointsize>20</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 20pt &quot;Segoe UI&quot;;</string>
+   </property>
    <property name="text">
-    <string>Login</string>
+    <string>Thêm học sinh</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>

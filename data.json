@@ -1,26 +1,22 @@
 [
     {
-        "name": "Vật lý",
-        "pwd": "1"
+        "name": "Tường Duy",
+        "pwd": "9.5"
     },
     {
-        "name": "Hoá học",
-        "pwd": "45"
+        "name": "Đình Phước",
+        "pwd": "10"
     },
     {
-        "name": "Sinh học",
-        "pwd": "48"
+        "name": "Gia Bảo",
+        "pwd": "9"
     },
     {
-        "name": "Java",
-        "pwd": "12"
+        "name": "Anh Khoa",
+        "pwd": "8"
     },
     {
-        "name": "Python",
-        "pwd": "90"
-    },
-    {
-        "name": "Vietnamese",
-        "pwd": "99"
+        "name": "Ngọc Hân",
+        "pwd": "8.5"
     }
 ]

@@ -10,21 +10,33 @@
     <height>606</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>60</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>606</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <property name="spacing">
-    <number>0</number>
+    <number>9</number>
    </property>
    <property name="leftMargin">
-    <number>0</number>
+    <number>9</number>
    </property>
    <property name="topMargin">
     <number>0</number>
    </property>
    <property name="rightMargin">
-    <number>0</number>
+    <number>9</number>
    </property>
    <property name="bottomMargin">
     <number>0</number>
@@ -33,238 +45,319 @@
     <widget class="QWidget" name="sidebar" native="true">
      <property name="minimumSize">
       <size>
-       <width>148</width>
+       <width>200</width>
        <height>0</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
-       <width>148</width>
+       <width>200</width>
        <height>16777215</height>
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">QWidget#sidebar {
-	background-color: #fa1
-}</string>
+      <string notr="true">
+	background-color: #F5F6F8;
+   border-radius: 15px;
+</string>
      </property>
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
        <widget class="QWidget" name="logo" native="true">
         <property name="minimumSize">
          <size>
-          <width>128</width>
-          <height>40</height>
+          <width>0</width>
+          <height>100</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>128</width>
-          <height>40</height>
+          <width>200</width>
+          <height>100</height>
          </size>
         </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <property name="spacing">
-          <number>8</number>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>20</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
          </property>
-         <property name="leftMargin">
-          <number>0</number>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
          </property>
-         <property name="topMargin">
-          <number>0</number>
+         <property name="styleSheet">
+          <string notr="true"/>
          </property>
-         <property name="rightMargin">
-          <number>0</number>
+         <property name="text">
+          <string>Tường Dii</string>
          </property>
-         <property name="bottomMargin">
-          <number>0</number>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="enabled">
+          <bool>false</bool>
          </property>
-         <item alignment="Qt::AlignTop">
-          <widget class="QPushButton" name="nobtn">
-           <property name="minimumSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>icons/rank.png</normaloff>icons/rank.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
+         <property name="geometry">
+          <rect>
+           <x>82</x>
+           <y>48</y>
+           <width>49</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <italic>true</italic>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Twdii</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>7</x>
+           <y>20</y>
+           <width>71</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>icons/TuongDii.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
        </widget>
       </item>
-      <item row="1" column="0">
+      <item>
        <widget class="QWidget" name="menu" native="true">
         <property name="minimumSize">
          <size>
-          <width>128</width>
+          <width>0</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>128</width>
+          <width>190</width>
           <height>16777215</height>
          </size>
         </property>
-        <layout class="QGridLayout" name="gridLayout_2">
-         <item row="0" column="0">
-          <widget class="QPushButton" name="all">
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QWidget" name="widget_3" native="true">
            <property name="minimumSize">
             <size>
-             <width>80</width>
-             <height>32</height>
+             <width>0</width>
+             <height>60</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>80</width>
-             <height>32</height>
+             <width>16777215</width>
+             <height>60</height>
             </size>
            </property>
-           <property name="cursor">
-            <cursorShape>PointingHandCursor</cursorShape>
-           </property>
-           <property name="text">
-            <string>     All</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>icons/all.png</normaloff>icons/all.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>28</width>
-             <height>28</height>
-            </size>
-           </property>
-           <property name="checkable">
-            <bool>false</bool>
-           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>icons/icons8-male-user-48.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">	background-color: #F5F6F8;
+</string>
+              </property>
+              <property name="text">
+               <string>Trang cá nhân</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </item>
-         <item row="1" column="0">
-          <widget class="QPushButton" name="math">
+         <item>
+          <widget class="QWidget" name="widget_4" native="true">
            <property name="minimumSize">
             <size>
-             <width>80</width>
-             <height>32</height>
+             <width>0</width>
+             <height>60</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>80</width>
-             <height>32</height>
+             <width>16777215</width>
+             <height>60</height>
             </size>
            </property>
-           <property name="cursor">
-            <cursorShape>PointingHandCursor</cursorShape>
-           </property>
-           <property name="text">
-            <string> Math</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>icons/math.png</normaloff>icons/math.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>24</width>
-             <height>24</height>
-            </size>
-           </property>
-           <property name="checkable">
-            <bool>false</bool>
-           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>icons/icons8-ranking-48.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_3">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Bảng xếp hạng</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </item>
-         <item row="2" column="0">
-          <widget class="QPushButton" name="english">
+         <item>
+          <widget class="QWidget" name="widget_5" native="true">
            <property name="minimumSize">
             <size>
-             <width>80</width>
-             <height>32</height>
+             <width>0</width>
+             <height>60</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>80</width>
-             <height>32</height>
+             <width>16777215</width>
+             <height>60</height>
             </size>
            </property>
-           <property name="cursor">
-            <cursorShape>PointingHandCursor</cursorShape>
-           </property>
-           <property name="text">
-            <string> Code</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>icons/code.png</normaloff>icons/code.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="checkable">
-            <bool>false</bool>
-           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>icons/icons8-note-48.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_4">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Ghi chú</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </item>
-         <item row="3" column="0">
-          <widget class="QPushButton" name="code">
-           <property name="minimumSize">
-            <size>
-             <width>80</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>80</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="cursor">
-            <cursorShape>PointingHandCursor</cursorShape>
-           </property>
-           <property name="text">
-            <string>    Eng</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>icons/english.png</normaloff>icons/english.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>32</width>
-             <height>32</height>
-            </size>
-           </property>
-           <property name="checkable">
-            <bool>false</bool>
-           </property>
-          </widget>
+         <item>
+          <widget class="QWidget" name="widget_2" native="true"/>
          </item>
         </layout>
        </widget>
@@ -274,6 +367,11 @@
    </item>
    <item>
     <widget class="QWidget" name="rightbar" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: white;
+border-radius: 15px;
+</string>
+     </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QWidget" name="action" native="true">
@@ -306,11 +404,18 @@
            </property>
            <property name="font">
             <font>
+             <family>Arial</family>
              <pointsize>16</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
             </font>
            </property>
+           <property name="styleSheet">
+            <string notr="true">font: 700 16pt &quot;Arial&quot;;
+</string>
+           </property>
            <property name="text">
-            <string>Learn To Earn - L2E</string>
+            <string>Bảng xếp hạng tổng</string>
            </property>
           </widget>
          </item>
@@ -331,8 +436,11 @@
            <property name="cursor">
             <cursorShape>PointingHandCursor</cursorShape>
            </property>
+           <property name="styleSheet">
+            <string notr="true">font: 700 11pt &quot;Segoe UI&quot;;</string>
+           </property>
            <property name="text">
-            <string>   Add New Student</string>
+            <string> Thêm</string>
            </property>
            <property name="icon">
             <iconset>
@@ -378,10 +486,11 @@
                  <property name="font">
                   <font>
                    <pointsize>11</pointsize>
+                   <bold>true</bold>
                   </font>
                  </property>
                  <property name="text">
-                  <string>Name</string>
+                  <string>Họ Tên</string>
                  </property>
                 </widget>
                </item>
@@ -390,10 +499,11 @@
                  <property name="font">
                   <font>
                    <pointsize>11</pointsize>
+                   <bold>true</bold>
                   </font>
                  </property>
                  <property name="text">
-                  <string>Password</string>
+                  <string>Điểm</string>
                  </property>
                 </widget>
                </item>
@@ -402,10 +512,11 @@
                  <property name="font">
                   <font>
                    <pointsize>11</pointsize>
+                   <bold>true</bold>
                   </font>
                  </property>
                  <property name="text">
-                  <string>Action</string>
+                  <string>Sửa</string>
                  </property>
                 </widget>
                </item>
@@ -414,10 +525,11 @@
                  <property name="font">
                   <font>
                    <pointsize>11</pointsize>
+                   <bold>true</bold>
                   </font>
                  </property>
                  <property name="text">
-                  <string>Action</string>
+                  <string>Xóa</string>
                  </property>
                 </widget>
                </item>
@@ -435,7 +547,14 @@
              <height>480</height>
             </size>
            </property>
-           <layout class="QVBoxLayout" name="verticalLayout_4"/>
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Segoe UI&quot;;</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+           </layout>
           </widget>
          </item>
         </layout>
